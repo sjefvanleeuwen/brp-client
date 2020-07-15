@@ -1,6 +1,7 @@
 # BRP Client - dotnet core
 
 [![nuget](https://img.shields.io/nuget/v/HaalCentraal.BRPBevragen)](https://www.nuget.org/packages/HaalCentraal.BRPBevragen/)
+![.NET Core](https://github.com/sjefvanleeuwen/brp-client/workflows/.NET%20Core/badge.svg)
 
 ## Wat is het?
 
