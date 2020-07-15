@@ -1,0 +1,21 @@
+﻿@page "/"
+@inject IBrpClient brp
+<h1>Ingeschreven natuurlijk persoon</h1>
+
+@persoon?.Verblijfplaats?.Straatnaam @persoon?.Verblijfplaats?.Huisnummer
+<br />
+@persoon?.Verblijfplaats?.Postcode  @persoon?.Verblijfplaats?.Woonplaatsnaam
+
+@code {
+
+        IngeschrevenPersoonHal persoon { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            persoon = await brp.IngeschrevenNatuurlijkPersoonAsync("999993872", null, null);
+            StateHasChanged();
+        }
+    }
+}

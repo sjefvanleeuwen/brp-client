@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>b50984fb-30f2-4b9d-972a-eadf39c4fd5d</UserSecretsId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>HaalCentraal.BrpBevragen</PackageId>
+    <Authors>Sjef van Leeuwen</Authors>
+    <Company>Virtual Society</Company>
+    <Product>Haal Centraal BRP API Client</Product>
+    <PackageProjectUrl>https://github.com/sjefvanleeuwen/brp-client</PackageProjectUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/sjefvanleeuwen/brp-client</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags></PackageTags>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Title>Haal Centraal BRP Bevragen</Title>
+    <Description>BRP Bevragen is een Haal Centraal API voor het zoeken en raadplegen van ingeschreven natuurlijke personen voor alle binnengemeentelijke afnemers in NL. De informatie die de API levert is herleidbaar naar het LO GBA 3.10.</Description>
+    <NeutralLanguage></NeutralLanguage>
+    <Copyright>Copyright (c) 2020 Sjef van Leeuwen</Copyright>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageVersion>0.0.2</PackageVersion>
+    <PackageReleaseNotes></PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\doc\img\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
